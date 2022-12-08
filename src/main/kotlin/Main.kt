@@ -104,7 +104,7 @@ fun part2(trees: List<List<Int>>) {
                     visible++
                 }
 
-                // We should not check further if the tree has the same height as the neighbour.
+                // We should not check further if the tree has the same height or higher than the current tree.
                 if (top >= tree)
                     break
             }
@@ -123,7 +123,7 @@ fun part2(trees: List<List<Int>>) {
                     visible++
                 }
 
-                // We should not check further if the tree has the same height as the neighbour.
+                // We should not check further if the tree has the same height or higher than the current tree.
                 if (left >= tree)
                     break
             }
@@ -142,7 +142,7 @@ fun part2(trees: List<List<Int>>) {
                     visible++
                 }
 
-                // We should not check further if the tree has the same height as the neighbour.
+                // We should not check further if the tree has the same height or higher than the current tree.
                 if (down >= tree)
                     break
             }
@@ -161,7 +161,7 @@ fun part2(trees: List<List<Int>>) {
                     visible++
                 }
 
-                // We should not check further if the tree has the same height as the neighbour.
+                // We should not check further if the tree has the same height or higher than the current tree.
                 if (right >= tree)
                     break
             }
